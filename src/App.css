@@ -29,6 +29,14 @@ body{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+@media(max-width: 800px){
+  #formsBody{
+    width: 80vw;
+    height: 500px;
+    margin-top: 15vh
+  }
+}
+
 /* left side nav bar */
 
 #formsNavContainer{
@@ -122,6 +130,57 @@ body{
   transform: rotate(160deg);
 }
 
+@media(max-width: 800px){
+  #formsNavContainer{
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 20vh;
+    width: 100vw;
+    margin: 0;
+    border-radius: 0px;
+    z-index: -1;
+  }
+
+  .optionText{
+    display: none;
+  }
+
+  #optionContainer{
+    flex-flow: row;
+    margin: 0;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  #decoSquareOne{
+    position: absolute;
+    top: 45px;
+    right: 75px;
+  }
+  #decoSquareTwo{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+  }
+  #decoSquareThree{
+    position: absolute;
+    top: 10px;
+  }
+  #decoSquareFour{
+    position: absolute;
+    top: 10px;
+  }
+  #decoSquareFive{
+    position: absolute;
+    top: 55px;
+    left: -100px;
+  }
+}
+
  /* Info body */
 
  #infoBodyContainer{
@@ -191,6 +250,22 @@ body{
   color: #00ADB5;
 }
 
+@media(max-width: 800px){
+  .carousel{
+    max-width: 78vw;
+  }
+  .imageContainer{
+    width: 78vw;
+  }
+  #informationContainer{
+    margin: 0 2vw;
+  }
+  .textContainer{
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+}
+
 
 /* card 2 cards */
 
@@ -239,6 +314,34 @@ body{
 
 #billingCard:hover{
   background-color: #60646c11;
+}
+
+@media(max-width: 800px){
+  .billingCardContainer{
+    margin: 0;
+  }
+  #cardsContainer{
+    flex-flow: column;
+    margin: 5px 0;
+  }
+  #billingCard{
+    width: 72vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  .billingCardContainer:nth-child(1){
+    margin-top: 15px;
+  }
+  #billingCard *{
+    margin: 0;
+  }
+  #billingCard p{
+    align-items: flex-end;
+    margin-right: 10px;
+  }
 }
 
 /* card 2 slide button */
@@ -419,4 +522,22 @@ body{
 #navBottomRight:hover{
   background-color: #009097;
   transform: scale(0.9);
+}
+
+@media(max-width:800px){
+  #navBottom{
+    position: absolute;
+    height: 50px;
+    width: 100vw;
+    bottom: 0;
+    padding: 5px 0;
+    left: 0;
+    background-color: white;
+  }
+  #optionContainer{
+    z-index: 1;
+  }
+  .option{
+    transform: scale(1.2);
+  }
 }
